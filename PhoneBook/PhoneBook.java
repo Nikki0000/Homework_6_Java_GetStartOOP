@@ -25,6 +25,16 @@ public class PhoneBook {
         }
     }
 
+    public void deletePhone(User user, Integer phone) {
+        
+        ArrayList<Integer> listNum = resList.get(user);
+
+        if(listNum.contains(phone)) {
+            listNum.remove(phone);
+        }
+        
+    }
+
 
     public void printPhoneBook() {
         resList.entrySet().stream()

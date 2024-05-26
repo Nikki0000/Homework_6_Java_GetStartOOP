@@ -32,6 +32,10 @@ public class Main {
 
         pb.printPhoneBook();
 
+        pb.deletePhone(user3, 111);
+
+        pb.printPhoneBook();
+
         
     }
 }
